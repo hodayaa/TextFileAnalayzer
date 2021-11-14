@@ -11,7 +11,7 @@ namespace TextFileAnalayzer
             Console.WriteLine("Welcome For TFM- Text File Mananger!");
             Console.WriteLine("Enter path of file:");
             string path = Console.ReadLine();
-            FileInfo file = new FileInfo(path);
+            FileInfo file = new FileInfo(@path);
 
             int LinesCount = FileManage.CountLines(file);
             long WordsCount = FileManage.CountWords(file);
