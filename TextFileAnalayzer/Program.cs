@@ -12,12 +12,17 @@ namespace TextFileAnalayzer
             Console.WriteLine("Enter path of file:");
             string path = Console.ReadLine();
             FileInfo file = new FileInfo(@path);
-
+            //#1
             int LinesCount = FileManage.CountLines(file);
+            //#2
             long WordsCount = FileManage.CountWords(file);
+            //#3
             int UniqWordsCount = FileManage.CountUniqueWords(file);
+            //#4
             int[] maxAvgSentence = FileManage.MaxAvgSentence(file);
+            //#6
             string wordsWithoutK = FileManage.MaxWordsWithoutK(file);
+            //#8
             Dictionary<string, int> colors = FileManage.CountColors(file);
 
             Console.WriteLine("Number of lines: " + LinesCount);
