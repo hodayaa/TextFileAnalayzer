@@ -20,13 +20,13 @@ namespace TextFileAnalayzer
             string wordsWithoutK = FileManage.MaxWordsWithoutK(file);
             Dictionary<string, int> colors = FileManage.CountColors(file);
 
-            Console.WriteLine("Number of lines:" + LinesCount);
-            Console.WriteLine("Number of words::" + WordsCount);
-            Console.WriteLine("Number of unique words:" + UniqWordsCount);
-            Console.WriteLine("Average sentence length:" + maxAvgSentence[1]);
-            Console.WriteLine("Maximum sentence length:" + maxAvgSentence[0]);
-            Console.WriteLine("The maximum words without K:" + wordsWithoutK);
-            Console.WriteLine("The colors:");
+            Console.WriteLine("Number of lines: " + LinesCount);
+            Console.WriteLine("Number of words: " + WordsCount);
+            Console.WriteLine("Number of unique words: " + UniqWordsCount);
+            Console.WriteLine("Average sentence length: " + maxAvgSentence[1]);
+            Console.WriteLine("Maximum sentence length: " + maxAvgSentence[0]);
+            Console.WriteLine("The maximum words without K: " + wordsWithoutK);
+            Console.WriteLine("The colors: ");
             foreach (KeyValuePair<string, int> color in colors)
             {
                 Console.WriteLine(color.Key + ": " + color.Value);
